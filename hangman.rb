@@ -98,7 +98,6 @@ class Hangman
       :blank_word => @game.blank_word,
       :guessed_letters => @game.guessed_letters
     })
-
     File.open("saved_game.json", "w") { |file| file.write(save) }
   end
 
